@@ -17,7 +17,7 @@ const navigationController = {
         else if(inPotencia && inResistencia) res.locals.voltaje = Math.sqrt(inPotencia*inResistencia);
 
         // Resistencia
-        if (inVoltaje && inCorriente) res.locals.resistencia = inVoltaje * inCorriente;
+        if (inVoltaje && inCorriente) res.locals.resistencia = inVoltaje / inCorriente;
         else if(inPotencia && inVoltaje) res.locals.resistencia = (inVoltaje * inVoltaje) / inPotencia;
         else if(inPotencia && inCorriente) res.locals.resistencia = inPotencia / (inCorriente * inCorriente);
 
@@ -28,7 +28,7 @@ const navigationController = {
 
         // Potencia
         if (inCorriente && inResistencia) res.locals.potencia = (inCorriente * inCorriente) * inResistencia;
-        else if(inVoltaje && inCorriente) res.locals.potencia = inVoltaje / inCorriente;
+        else if(inVoltaje && inCorriente) res.locals.potencia = inVoltaje * inCorriente;
         else if(inVoltaje && inResistencia) res.locals.potencia = (inVoltaje * inVoltaje) / inResistencia;
 
 
