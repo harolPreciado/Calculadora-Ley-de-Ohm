@@ -1,47 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
-  <%- include('partials/head', {title: 'LEY DE OHM'}) %>
+<%- include('partials/head', {title: 'LEY DE OHM' }) %>
+
   <body>
-    <%- include('partials/nav', {navtitle: 'Ley de Ohm'}) %>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-    <section>
-      <form action="/" method="post">
-      <label>
-        <input type="number" name="voltaje" value= <%= locals.voltaje %>>
-        <div class="simbolo"><p>V</p></div>
-      </label>
-      <label>
-        <input type="number" name="corriente" value= <%= locals.corriente %>>
-        <div class="simbolo"><p>A</p></div>
-      </label>
-      <label>
-        <input type="number" name="resistencia" value= <%= locals.resistencia %>>
-        <div class="simbolo"><p>Ω</p></div>
-      </label>
-      <label>
-        <input type="number" name="potencia" value= <%= locals.potencia %>>
-        <div class="simbolo"><p>W</p></div>
-      </label>
-      <div class="botones">
-        <label>
-          <input type="submit" name="submit">
-        </label>
-        <a href="/">
-          <input type="button" name="Limpiar" value="Restablecer">
-        </a>
-      </div>
-    </form>
-    <div>
-      <img src="img/triangulo.png" alt="">
-    </div>
-    
-    </section>
-    
-    <footer>
-      <p>
-        Desing By Harol Preciado
+    <%- include('partials/nav', {navtitle: 'Ley de Ohm' }) %>
+      <h1>
+        <%= title %>
+      </h1>
+      <p>Welcome to <%= title %>
       </p>
-    </footer>
+      <section>
+        <form action="/" method="post">
+          <label>
+            <input type="number" name="voltaje" value=<%=locals.voltaje %>>
+            <div class="simbolo">
+              <p>V</p>
+            </div>
+          </label>
+          <label>
+            <input type="number" name="corriente" value=<%=locals.corriente %>>
+            <div class="simbolo">
+              <p>A</p>
+            </div>
+          </label>
+          <label>
+            <input type="number" name="resistencia" value=<%=locals.resistencia %>>
+            <div class="simbolo">
+              <p>Ω</p>
+            </div>
+          </label>
+          <label>
+            <input type="number" name="potencia" value=<%=locals.potencia %>>
+            <div class="simbolo">
+              <p>W</p>
+            </div>
+          </label>
+          <div class="botones">
+            <label>
+              <input type="submit" name="submit">
+            </label>
+            <a href="/">
+              <input type="button" name="Limpiar" value="Restablecer">
+            </a>
+          </div>
+        </form>
+        <div>
+          <img src="img/triangulo.png" alt="">
+        </div>
+      </section>
+
+      <footer>
+        <p>
+          Desing By Harol Preciado
+        </p>
+      </footer>
   </body>
+
 </html>
