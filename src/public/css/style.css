@@ -1,0 +1,69 @@
+*{
+  background-color: rgb(255, 255, 255);
+}
+
+body {
+  padding: 30px 50px 0 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+section{
+  display: flex;
+  flex-direction: row;
+}
+
+form{
+  margin: auto;
+}
+form label{
+  margin-bottom: 10px;
+}
+
+form label input[type="number"]{
+  width: 200px;
+  border-radius: 10%;
+  font-size: 20px;
+}
+
+
+label{
+  display: flex;
+  height: 50px;
+}
+
+label div{
+  background-color: gray;
+  height: 100%;
+  width: 50px;
+  border-radius: 10%;
+  margin-left: 10px;
+}
+
+label p{
+  background-color: gray;
+  font-size: 20px;
+  margin: auto;
+  padding: 10px 0 0 18px;
+}
+
+.botones{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.botones label input, .botones a input{
+  height: 40px;
+  width: 150px;
+  border-radius: 20%;
+}
+.botones label input{
+  background-color: red;
+}
+
+.botones a input{
+  background-color: gray;
+}
+.botones label{
+  margin-right: 20px;
+}
